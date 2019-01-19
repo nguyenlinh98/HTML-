@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>bai 2</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<script type="text/javascript">
+		function insertcol() {
+			var col=document.getElementById("col").value;
+			for(var i =1; i<=col;i++)
+			{
+				document.write("<div>");
+				document.write("the thu"+i);
+				document.write("</div>");
+
+			}
+
+		}
+	</script>
+	<div>
+		<input type="text" id="col">
+		<button onclick="insertcol()">tao</button>
+	</div>
+</body>
+</html>

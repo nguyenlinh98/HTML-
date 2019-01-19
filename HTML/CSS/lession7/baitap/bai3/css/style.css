@@ -1,0 +1,21 @@
+table
+{
+	border: 1px solid black;
+
+}
+tr
+{
+	border:1px solid black;
+
+}
+td
+{
+	border: 1px solid black;
+
+}
+.cot1{
+	background-color: green;
+}
+.cot2{
+	background-color: yellow;
+}

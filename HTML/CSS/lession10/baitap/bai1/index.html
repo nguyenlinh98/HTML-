@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<form>
+		<div>
+			<ul>
+				<li><input type="checkbox"  id="checkAll" onclick="setAll()">Check all</li>
+				<li><input type="checkbox" > học HTML CSS</li>
+				<li><input type="checkbox" > Học PHP căn bản</li>
+				<li><input type="checkbox" > Học PHP nâng</li>
+				<li><input type="checkbox" > Học PHO frameWork</li>
+			</ul>
+		</div>
+	</form>
+	<script>
+
+		 function setAll()
+		 {
+		 	var checkBoxArr = document.getElementsByTagName("input");
+		 	var flage;
+
+		 	if(document.getElementById("checkAll").checked)
+		 	{
+		 		// lay ra mang
+		 		// lay ra do dai cua mang
+		 		flage = true;
+		 		console.log(flage);
+		 		// document.gettElementsByTagName("input").checked = true;
+		 	} else {
+		 		flage = false;
+		 		console.log(flage);
+		 		 // document.getElementsByTagName("input").checked = false;
+		 		 
+		 	}
+
+		 	for(var i = 0; i< checkBoxArr.length ;i++)
+		 	{
+		 		 
+		 		 document.getElementsByTagName("input")[i].checked = flage;
+		 	 }
+
+		 }
+
+		 
+
+	</script>
+</body>
+</html>

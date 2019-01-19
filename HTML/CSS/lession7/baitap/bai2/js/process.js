@@ -1,0 +1,10 @@
+var name= prompt("họ và tên:");
+var tuoi=prompt("tuoi:");
+var gt= prompt("giới tính:");
+var diachi= prompt("địa chỉ:");
+var phone= prompt("điện thoại");
+document.write("họ và tên:"+name+"<br>");
+document.write("tuổi:"+tuoi+"<br>");
+document.write("giới tính:"+gt+"<br>");
+document.write("địa chỉ:"+diachi+"<br>");
+document.write("điện thoại"+phone+"<br>");
