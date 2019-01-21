@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>bai thu lam </title>
+	<link rel="stylesheet" href="">
+	<script src="../../../jquery/jquery.min.js"></script>
+</head>
+<script >
+	// $(document).ready(function(){
+	// 	//lay theo id
+	// 	$("#code").click(function(){
+	// 		$(this).hide();
+	// 	});
+	// 	//lay theo tagname
+	// 	$("button").click(function(){
+	// 		alert('ok');
+	// 	});
+	// });
+	$(document).ready(function(){
+		//lay ra thuoc tinh
+		$("button").click(function(){
+			// input[thuoc tinh noi bat], .val->de lay gia tri
+			$account = $("input[id=name]").val();
+			$pass = $("input[id=pass]").val();
+			$email = $("input[id=email]").val();
+			$("#loiten").text($account+"chua dung");
+			$("#loipass").text($pass+"chua dung")
+		});
+	});
+</script>
+<body>
+<form>
+	<div>
+		<label for="name">tai khoan:</label>
+		<input type="text" name="name" id="name">
+		<!-- name .id  la thuoc tinh -->
+	</div>
+	<div>
+		<label for="pass">password:</label>
+		<input type="password" name="pass" id="pass">
+	</div>
+	<div>
+		<label for="email">email:</label>
+		<input type="text" name="email" id="email">
+	</div>
+</form>
+<button id="btn" class="btnclass">dang nhap</button>
+<div>
+	tai khoan:<span id="loiten">abckfhd</span><br>
+	mat khau:<span id="loipass"></span>
+</div>
+<!-- <p id="code"> chuong trinh chay dung</p>
+
+	<button type="">click on</button> -->
+</body>
+</html>

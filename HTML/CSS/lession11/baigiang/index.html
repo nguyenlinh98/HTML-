@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>bai forcus</title>
+        <link rel="stylesheet" href="">
+        <script type="text/javascript">
+            function checkvalues(x) {
+                x.style.color = "red";
+                x.style.background="blue";
+            }
+
+            function check(y)
+            {
+
+                y.style.background="pink";
+            }
+
+            function form() {
+                alert("submit form nhe !");
+            }
+        </script>
+     </head>
+    <body>
+       <table>
+            <form action="https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp" onsubmit="form()" >
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text" onfocus="checkvalues(this)" onblur="check(this)" name="fullName" id="fullName" ></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="errors" id="error_fullname"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>email: </td>
+                    <td><input type="submit" name="email" id="email"><input type="reset" name="email" id="email"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <span class="errors" id="error_email"></span>
+                    </td>
+                </tr>
+            </form>
+        </table> 
+    </body>
+</html>
