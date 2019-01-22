@@ -4,3 +4,7 @@ li:hover{
 li{
 	list-style-type: none;
 }
+a {
+	color: red;
+
+}
